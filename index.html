@@ -1,143 +1,112 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-        <title>Musica</title>
-        <link rel="icon" href="https://p4.wallpaperbetter.com/wallpaper/877/797/262/music-black-icon-wallpaper-preview.jpg">
-        <link href="assets/css/estilo.css" rel="stylesheet" type="text/css">
-    </head>
-
-    <body>
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img class="img-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJaiEORLhFDrhpTSt30ReYwIfljaYw0GbAJw&usqp=CAU">
-                </a>
+  
+  
+  <link href="assets/css/estilo.css" rel="stylesheet" type="text/css">
+  <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark justify-content-around sticky-top" id="nav">     
+            <div id="navTexto">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                  <ul class="navbar-nav ">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#imagenes">Imagenes</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#video">Video</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#adoptar">Contacto</a>
-                    </li>         
-                  </ul>
-                </div>
+
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#imagenes">Informacion</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#video">Videos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#adoptar">Formulario</a>
+                      </li>         
+                    </ul>
+                </div>      
             </div>
+
+            <div id="navIconos"> 
+              <div class="divIconoIndividual">
+                <i class="uil uil-search"></i>
+              </div>    
+              <div class="divIconoIndividual">
+                <i class="uil uil-heart"></i>
+              </div>   
+              <div class="divIconoIndividual">
+                <i class="uil uil-user iconoUsuario"></i>
+              </div>
+              <div class="divIconoIndividual">
+                <i class="uil uil-shopping-cart"></i>
+              </div>       
+            </div>    
         </nav>
-
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <!-- <div class="pantalla">
-              <div class="cuadro">
-                <h1>CATS4U</h1>
-                <p>¿Quieres adoptar un nuevo gato o gatito y no sabes dónde?, descuida, en el Blog de NUPEC tenemos una excelente recomendación para que puedas adoptar de forma segura, responsable y confiable a un cómplice felino. Sigue leyendo para descubrir dónde, cuándo y cómo adoptar a un cómplice felino.</p>
-              </div>
-            </div> -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100 img-carrusel" src="https://wallpaperbat.com/img/276466-the-neighbourhood-review-photoset-rock-concert-hd-wallpaper.jpg" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 img-carrusel" src="https://hd-wallpaper.wiki/wp-content/uploads/2021/12/nf-real-music-wallpaper.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 img-carrusel" src="https://images5.alphacoders.com/609/thumb-1920-609249.jpg" alt="Third slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+    </header>
+    <main>
+      <div id="carouselExampleIndicators" class="carousel slide divCarrusel" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100 imagenSlider" src="https://tomorrowlandlatino.com/wp-content/uploads/2021/01/Armin-van-Buuren.jpg" alt="First slide">
           </div>
-        
-          <div class="imagenContenedor">
-            <div class="imagenMovimiento">
-              <img src="https://bestanimations.com/Animals/Mammals/Cats/cats/cute-kitty-animated-gif-2.gif">
-            </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 imagenSlider" src="https://hd-wallpaper.wiki/wp-content/uploads/2021/12/nf-real-music-wallpaper.jpg" alt="Second slide">
           </div>
-        
-          <div id="imagenes">
-            <div class="container pt-5">
-              <div class="row row-cols-1 row-cols-md-3 justify-content-center">
-                <div class="col mb-4 cardAlto">
-                  <div class="card">
-                    <img src="https://i.ytimg.com/vi/Z3UCVQIjAJ8/maxresdefault.jpg" class="card-img-top img-card" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">The Neighbourhood</h5>
-                      <p class="card-text">es un grupo de musica alternativa rock estadounidense creado en agosto de 2011. El grupo está conformado por el vocalista Jesse Rutherford, los guitarristas Jeremy Freedman y Zach Abels, el baterista Brandon Fried y el bajista Mikey Margott. Posteriormente The Neighbourhood reveló su primer álbum de larga duración, el 23 de abril de 2013, por medio de Columbia Records.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4 cardAlto">
-                  <div class="card">
-                    <img src="https://i0.wp.com/www.vinilonegro.com/wp-content/uploads/2019/08/NF-2-e1564828099811.jpg?resize=600%2C381&ssl=1" class="card-img-top img-card" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">NF</h5>
-                      <p class="card-text">Nathan John Feuerstein (Gladwin, Míchigan; 30 de marzo de 1991), más conocido profesionalmente como NF (estilizado como ИF) es un rapero, cantante y compositor estadounidense, Lanzó un EP en 2014 con Capitol CMG, NF , que fue su gran avance en las listas de Billboard. </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4 cardAlto">
-                  <div class="card">
-                    <img src="https://garajedelrock.com/wp-content/uploads/2020/12/monkeys.jpg" class="card-img-top img-card" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Arctic Monkeys</h5>
-                      <p class="card-text">Arctic Monkeys es una banda británica de rock, formada en Sheffield, Reino Unido.3​ El grupo está compuesto por el guitarrista principal y vocalista Alex Turner, el guitarrista Jamie Cook, el baterista Matt Helders, y con Nick O'Malley en el bajo. El bajista original de la banda, Andy Nicholson, dejó el proyecto en 2006 poco después del lanzamiento del álbum debut.</p>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 imagenSlider" src="https://data.whicdn.com/images/309894526/original.jpg" alt="Third slide">
           </div>
-
-          <div id="video" class="bg-dark">
-            <div class="container pt-4 pb-4">
-              <div class="row">
-                <div class="col-md d-flex align-items-center justify-content-center pt-2">
-                  <!-- <iframe width="460" height="315" src="https://www.youtube.com/embed/ce0LPDPV5NE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                  <a href="#modal" class="pb-3"><button type="submit" class="btn btn-warning verVideo">Ver Video</button></a>
-                </div>  
-                <!-- <div class="col-md d-flex align-items-center ">
-                  <div>
-                    <h3 class="text-white text-center">Ver video antes de adoptar</h3>
-                    <p class="text-white">Hill's se asocia con refugios para brindar nutrición de primera calidad a los perros y gatos que lo necesitan. ¿El resultado? Animalitos cada vez más felices y saludables que encuentran un hogar. ¡Ayúdanos a darle a perros y gatos en refugios una nueva familia!</p>
-                  </div>
-                </div> -->
-              </div>  
-            </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 imagenSlider" src="https://wallpapercave.com/wp/wp3720301.png" alt="Third slide">
           </div>
-
-          <div class="contenedor" id="modal">
-            <div class="video" >
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ADUpCAJdKDE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-            </div>
-            <a href="#" class="btn-close-popup">X</a> 
+          <div class="carousel-item">
+            <img class="d-block w-100 imagenSlider" src="https://i.ytimg.com/vi/BNw0NXqYnvk/maxresdefault.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 imagenSlider" src="https://wallpaperaccess.com/full/1716033.jpg" alt="Third slide">
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="imagenContenedor">
+        <div class="imagenMovimiento">
+          <img src="https://bestanimations.com/Animals/Mammals/Cats/cats/cute-kitty-animated-gif-2.gif">
+        </div>
+      </div>
+    </main>
 
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        
+    <footer>
 
-    </body>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</body>
 </html>
