@@ -1,7 +1,13 @@
+
 header{
     /* z-index: 1; */
     /* position: relative; */
 }
+
+/* body{
+    background: url("../../space-black.jpg"); 
+} */
+
 main{
     /* z-index: 0; */
 }
@@ -20,11 +26,6 @@ main{
 #nav:hover{
     background-color: #343a4090;
     /* transform: scale(1.05); */
-}
-
-.container{
-    width: 50%;
-    /* border: 4px solid white; */
 }
 
 #navbarNav{
@@ -77,7 +78,8 @@ main{
 }
 
 .container{
-    border: 1px solid grey;
+    padding: 0;
+    /* border: 1px solid grey; */
 }
 .divCards{
     width: 100%;
@@ -99,4 +101,69 @@ main{
     object-position: center;
 }
 
+
+.letra{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
+
+}
+
+h5{
+    font-family: 'Sigmar One', cursive;
+    /* font-family: 'Oswald', sans-serif; */
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.card:hover{ 
+    background: #343a40;
+    transform: scale(1.05);
+    color: white;
+}
+
+.video{
+    width: 70%;
+    height: 70%;
+    padding: 2rem;
+    margin-right: 4rem;
+}
+
+.verVideo{
+    height: 5vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.btn-close-popup{
+    background: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    border-style: none;
+}
+
+.btn-warning .transformacion{
+    transform: scale(1.5);
+}
+
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    position: fixed; 
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+
+.contenedor:target{
+    background: rgba(0, 0, 0, 0.6);
+    visibility: visible;
+    opacity: 1;
+}
 
