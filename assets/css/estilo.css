@@ -60,66 +60,43 @@ main{
 }
 
 .imagenSlider{
-    height: 80vh;
+    height: 100vh;
     object-fit: cover;
     object-position: center;
 }
 
 .imagenContenedor{
+    justify-content: center;
     width: 100%;
     background-color: #343a40;
-    opacity: 0.9;
-    height: 15vh;
+    opacity: 0.8;
 }
 
 .imagenMovimiento{
-    width: 1%;
-    animation: animacion 5s ease-in;
-    animation-iteration-count: infinite;
+    /* border: 1px solid red; */
 }
 
-@media screen and (max-width: 480px){
-    
-    @keyframes animacion{
-        0%{
-            transform: translateX(300px);
-        }
-        100%{
-            transform: translateX(0px);
-        }
-    }  
+.container{
+    border: 1px solid grey;
+}
+.divCards{
+    width: 100%;
+    padding: 0 5%
+}
+.divCard{
+    /* border: 1px solid greenyellow; */
+    width: 25%;
+    padding: 1%;
+}
+.card{
+    height: 100%;
+    /* border: 1px solid red; */
+}
+.img-card{
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    object-position: center;
 }
 
-@media screen and (min-width: 481px){
 
-    @keyframes animacion{
-        0%{
-            transform: translateX(580px);
-        }
-        100%{
-            transform: translateX(0px);
-        }
-    } 
-}
-
-@media screen and (min-width: 769px){
-    @keyframes animacion{
-        0%{
-            transform: translateX(800px);
-        }
-        100%{
-            transform: translateX(0px);
-        }
-    }  
-}
-
-@media screen and (min-width: 1026px){
-    @keyframes animacion{
-        0%{
-            transform: translateX(1000px);
-        }
-        100%{
-            transform: translateX(0px);
-        }
-    }  
-}
