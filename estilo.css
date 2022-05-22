@@ -31,8 +31,7 @@ a {
 }
 
 .imgNav{
-    /* border: 1px solid firebrick; */
-    /* width: 15%; */
+    width: 15%;
 }
 
 .divUser{
@@ -98,24 +97,25 @@ p{
 
 .divNav{
     display: flex;
-    width: 30%;
     height: 7vh;
     /* border: 1px solid red; */
 }
 
 #divProyecto{
+    width: 20%;
     display: flex;
     align-items: center;
 }
 
 #divTexto{
+    width: 35%;
     display: flex;
     align-items: center;
 }
 
 #divBotones{
+    width: 45%;
     display: flex;
-    justify-content: end;
     align-items: center;
     color: white;
 }
@@ -123,6 +123,18 @@ p{
 .btnIcono{
     /* border: 1px solid rgb(0, 187, 255); */
     transform: scale(1.8);
+}
+
+.divInputBuscar{
+    width: 70%;
+}
+.divBtn{
+    width: 30%;
+}
+
+#btnCarrito{
+    margin-left: 1.5rem;
+    margin-right: 0.4rem;
 }
 
 .navbar-toggler{
@@ -278,19 +290,21 @@ p{
 }
 
 
-
 @media screen and (max-width: 992px){
     #nav{
         display: flex;
         justify-content: space-around;
         /* border: 1px solid white; */
     }
+    .imgNav{
+        width: 27%;
+    }
     .navbar{
         width: 100%;
     }
     #divProyecto{
+        width: 50%;
         display: flex;
-        justify-content: space-between;
     }
 
     #divTexto{
@@ -298,6 +312,7 @@ p{
     }
 
     #divBotones{
+        width: 50%;
         display: flex;
         justify-content: end;
     }
@@ -314,13 +329,21 @@ p{
         display: inline-block;
     } 
     .divIniciarSesion{
+
         margin-left: 1rem;
+    }
+    .TituloProyecto{
+        padding-left: 3rem;
+    }
+    #iconoToggler{
+        border: 1px solid rgba(223, 223, 223, 0.472);
     }
 }
 
 
-@media screen and (max-width: 575px){
+@media screen and (max-width: 670px){
     .imgNav{
+        width: 17%;
         margin-left: 2rem;
     }
     .divUser{
@@ -329,40 +352,58 @@ p{
     #nav{
         padding: 0 2rem;
     }
-}
-
-
-
-@media screen and (min-width: 360px){
-    .imgNav{
-        width: 30%;       
+    #divProyecto{
+        width: 25%;
+    }
+    #divTexto{
+        display: none;
+    }
+    #divBotones{
+        width: 75%;
+    }
+    .TituloProyecto{
+        display: none;
     }
     .btnIcono{
         /* border: 1px solid rgb(0, 187, 255); */
         transform: scale(1);
     }
     .divIniciarSesion{
-        font-size: 0.7rem;
+        font-size: 0.85rem;
+    }
+    #iconoToggler{
+        transform: scale(0.9);
+        border: 1px solid rgba(223, 223, 223, 0.472);
     }
 }
 
-@media screen and (min-width: 500px){
-    .imgNav{
-        width: 15%;       
-    }
-}
 
-@media screen and (min-width: 700px){
+/* Dimension para pantallas maximo 376*/
+@media screen and (max-width: 376px){
     .imgNav{
         width: 30%;       
     }
-}
-
-@media screen and (min-width: 991px){
-    .imgNav{
-        width: 18%;       
+    .btnIcono{
+        transform: scale(1);
+    }
+    .divIniciarSesion{
+        font-size: 0.7rem;
+    }
+    .TituloProyecto{
+        display: none;
+    }
+    #btnCarrito{
+        margin-left: 0.5rem;
+        margin-right: 0;
+    }
+    #iconoToggler{
+        transform: scale(0.9);
+        border: 1px solid rgba(223, 223, 223, 0.472);
     }
 }
+
+
+
 
 
 

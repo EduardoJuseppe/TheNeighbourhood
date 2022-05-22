@@ -19,6 +19,7 @@
 <body>
 
   <header>
+
     <div class="bg-principal">
       <div class="container" id="navLogoUser">
         <div class="divLogo">
@@ -37,14 +38,13 @@
 
     <div class="bg-principal">
       <div class="container" id="nav">
-        
         <nav class="navbar navbar-dark">
           <div class="divNav" id="divProyecto">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="iconoToggler">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand " href="#">Proyecto Cygnus</a>
+            <a class="navbar-brand TituloProyecto" href="#">Proyecto Cygnus</a>
           </div>
 
           <div class="divNav" id="divTexto">
@@ -55,8 +55,16 @@
 
 
           <div class="divNav" id="divBotones">
-            <i class="uil uil-search mr-4 btnIcono"></i>
-            <i class="uil uil-shopping-cart-alt mr-3 btnIcono"></i>
+            <div class="input-group input-group-sm d-flex align-items-center divInputBuscar">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Buscar</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="d-flex divBtn justify-content-end">
+              <i class="uil uil-search btnIcono" ></i>
+              <i class="uil uil-shopping-cart-alt btnIcono" id="btnCarrito"></i>
+            </div>
           </div>
 
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
