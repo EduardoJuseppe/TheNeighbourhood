@@ -11,7 +11,7 @@ let alturaDiv = element.clientHeight;
 // console.log(alturaDiv);
 // console.log(alturaH1);
 
-alturaDiv = alturaDiv -15;
+alturaDiv = alturaDiv;
 
 document.documentElement.style.setProperty('--altura', alturaDiv + "px");
 
