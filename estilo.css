@@ -31,7 +31,7 @@ a {
 }
 
 .imgNav{
-    width: 15%;
+    width: calc(var(--altura));
 }
 
 .divUser{
@@ -150,7 +150,7 @@ p{
 }
 
 .imagenSlider{
-    height: calc(75vh - var(--altura));
+    /* height: calc(75vh - var(--altura)); */
     /* object-fit: cover; */
     /* object-position: center; */
 }
